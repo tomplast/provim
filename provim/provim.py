@@ -12,7 +12,7 @@ import tarfile
 USER_PATH = os.path.expanduser('~')
 
 try:
-    os.makedirs(f'{USER_PATH}/.provim/profiles/', exists_ok=True)
+    os.makedirs(f'{USER_PATH}/.provim/profiles/', exist_ok=True)
 except OSError:
     print(f'Could not create {USER_PATH}/.provim/profiles/. Aborting!')
     exit(1)
